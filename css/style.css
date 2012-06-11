@@ -1,0 +1,77 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+#rts-map {
+	background:url('../images/background/sand1.jpg') repeat;
+    width:561px;
+    height:255px;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+}
+
+div.map-element {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width:50px;
+    height:50px;
+    float:left;
+}
+
+div.tree1 {
+	background:url('../images/background/tree1.gif');
+}
+
+div.map-element:hover {
+    background-color: #ddd;
+    opacity:0.2;
+}
+
+div.rts-unit {
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding:1px;
+    cursor:pointer;
+}
+div.rts-unit:hover {
+    padding:0px;
+    border:1px solid green;
+    background-color: #ddd;
+    opacity:0.9;
+}
+
+div.selected {
+    padding:0px;
+    border:1px solid green;
+}
+
+#unit1 {
+    background:url('../images/units/tank1.gif') no-repeat;
+}
+
+#unit2 {
+    background:url('../images/units/tank2.gif') no-repeat;
+    top:102px;
+}
+
+div.details-box {
+    margin:5px;
+    padding:5px;
+    width:200px;
+    border:1px dotted green;
+}
+
+div.details-box h3 {
+    margin:0px;
+    text-align:center;
+}
+
+div.details-box-title {
+    font-style:italic;
+    width:100px;
+    float:left;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-200000126/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Eshton.hu - Web RTS project" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="language" content="en" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <title>Web RTS project</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/rts.js"></script>
+</head>
+<body>
+    <div id="rts-map">
+        <div class="map-element" onclick="game.giveOrder(0, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(1, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(2, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(3, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(4, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(5, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(6, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(7, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(8, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(9, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(10, 0)"></div>
+        <div class="map-element" onclick="game.giveOrder(0, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(1, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(2, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(3, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(4, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(5, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(6, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(7, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(8, 1)"></div>
+        <div class="map-element tree1" onclick="game.giveOrder(9, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(10, 1)"></div>
+        <div class="map-element" onclick="game.giveOrder(0, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(1, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(2, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(3, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(4, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(5, 2)"></div>
+        <div class="map-element tree1" onclick="game.giveOrder(6, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(7, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(8, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(9, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(10, 2)"></div>
+        <div class="map-element" onclick="game.giveOrder(0, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(1, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(2, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(3, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(4, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(5, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(6, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(7, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(8, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(9, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(10, 3)"></div>
+        <div class="map-element" onclick="game.giveOrder(0, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(1, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(2, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(3, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(4, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(5, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(6, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(7, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(8, 4)"></div>
+        <div class="map-element" onclick="game.giveOrder(9, 4)"></div>
+        <div class="map-element tree1" onclick="game.giveOrder(10, 4)"></div>
+    </div>
+
+    <div id="unit1" class="rts-unit" onclick="game.setSelected(unit1);game.showDetails(unit1)"></div>
+    <div id="unit2" class="rts-unit" onclick="game.setSelected(unit2);game.showDetails(unit2)"></div>
+
+    <div class="details-box">
+        <h3>Unit details</h3>
+        <div class="details-box-title">Unit id:</div><span id="unit-details-id">0</span><br/>
+        <div class="details-box-title">Unit health:</div><span id="unit-details-health">0</span><br/>
+        <div class="details-box-title">Unit speed:</div><span id="unit-details-speed">0</span><br/><br/>
+        <span style="cursor:pointer;color:green;"">Use: select a tank and a place!</span>
+    </div>
+
+    <script type="text/javascript">
+        var unit1 = new RTSUnit("unit1", 0, 0);
+        var unit2 = new RTSUnit("unit2", 0, 2);
+        unit2.setHealth(80);
+        unit2.setSpeed(400);
+
+        var game = new RTSGame();
+        game.pushUnit(unit1);
+        game.pushUnit(unit2);
+        game.run();
+    </script>
+
+</body>
+</html>
